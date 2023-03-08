@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #adbaec , #8678bb);
+    
+    
+    
+  }
+
+ 
+
+  main {
+    
+    min-height: 100%;
+    
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top:0;
+    left:0;
+    background-image:linear-gradient(to right, #c4c5cc , #bcbbc4);
+    text-align: center;
+    
+    
+}
+
+
+
+
+
+
+ul{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+section, div{
+    display:block;
+    
+    
+}
+
+  li {
+    display: inline;
+    text-align: center;
+  }
+
+
+
+  li a:hover {
+    color: rgba(244, 248, 11, 0.89);
+  }
+
+  li a {
+    color: #5425FB;
+    
+  }
+
+  footer{
+    
+    background-image:linear-gradient(to right, #c4c5cc , #bcbbc4);
+    margin: 0;
+    padding: 0;
+    bottom:0;
+    left:0;
+    width: 100%;
+    
+  }
+
+  footer p {
+    color: #5425FB;
+    text-align: center;
+    
+    
+  }
+
+  .proceso{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 250px;
+    padding: 15px;
+
+  }
+
+  .paso{
+    width: 33%;
+    background-color: rgb(246, 248, 250);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+
+  }
+
+    #conecta{
+
+    border-radius: 25px;
+    background: #e5e8eb;
+    padding: 20px;
+    height: 150px;
+
+    }
+
+    #implementa{
+    border-radius: 25px;
+    background: #31e4bd;
+    padding: 20px;
+    height: 150px;
+
+    }
+
+    #reduce{
+        border-radius: 25px;
+        background: #d9e444;
+        padding: 20px;
+        height: 150px;
+
+    }
+    
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    
+  } 
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  
+
+
+
+  
+  @media screen and (max-width: 600px ){
+
+    .topnav a{
+
+        display: block;
+        width: 100%;
+
+    }
+    
+    .hero, main{
+        background-color: #adbaec;
+    }
+
+    .herocentral {
+        display: none;
+    }
+
+    section{
+        text-align: left;
+    }
+
+  }
