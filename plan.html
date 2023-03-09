@@ -21,7 +21,7 @@
 <body>
 
     <div class="container">
-        <header class="d-flex justify-content-center py-3">
+        <header class="d-flex justify-content-center py-3" id="nav--diseño">
           <ul class="nav nav-pills">
             <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="soluciones.html" class="nav-link">Soluciones</a></li>
@@ -48,63 +48,107 @@
         </main>
         
 
-        <h1>Empieza tu proceso de descarbonización</h1>
+        <h1 id="planes--titulo">Empieza tu proceso de descarbonización</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TZyv9jyxUlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-        <p>Desde la aplicación de medidas de eficiencia energética hasta la inversión en energías renovables, las empresas pueden adoptar diferentes prácticas para reducir sus emisiones de carbono y contribuir a un futuro más sustentable.</p>
-        <button>Descarbonízate</button>
+<div id="tabla--diseño">
 
-
-
-
-        
-
-        
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Básico</th>
-            <th scope="col">Premium</th>
-            <th scope="col">Corporativo</th>
-            <th scope="col">Proveedores</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td colspan="1">Larry the Bird</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-        
     
+    <table>
+        <tr>
+          <th>Plan</th>
+          <th>Características</th>
+          <th>Mensualidad</th>
+        </tr>
+        <tr>
+          <td>Básico</td>
+          <td>Alcance 1, 2 y parte de 3</td>
+          <td>$1000 MXN</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>Alcance 1, 2 y 3</td>
+          <td>$2500</td>
+        </tr>
+        <tr>
+          <td>Corporativo</td>
+          <td>3 alcances y ruta de descarbonización</td>
+          <td>$5000</td>
+        </tr>
+        <tr>
+          <td>Proveedores</td>
+          <td>Diagnóstico y plan básico</td>
+          <td>$1000 por proveedor</td>
+      </tr>
+      </table>
+
+
+
+</div>
+
+
+     
+
+            
+    <div class="container">
+        <h2>Calcula tus emisiones</h2>
+        <form >
+          <div class="form-group">
+            <label for="usr">Empresa:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+         
+          <div class="form-group">
+
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Industria</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Comercio</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Servicio</label>
+              </div>
+
               
+          </div>
+          <br>
+          
+          <h4>Consumo anual de energéticos</h4>
+
+          <div class="form-group">
+            <label for="usr">Consumo eléctrico (kwh/año)</label>
+            <input type="number" class="form-control" id="kwh" name="electricidad">
+          </div>
+
+          <div class="form-group">
+            <label for="usr">Diesel (litros/año)</label>
+            <input type="number" class="form-control" id="diesel" name="consumodiesel">
+          </div>
+
+          <div class="form-group">
+            <label for="usr">Gas natural (m3/año)</label>
+            <input type="number" class="form-control" id="gas" name="consumogas">
+          </div>
+
+          <div class="form-group">
+            <label for="usr">Agua (m3/año)</label>
+            <input type="number" class="form-control" id="agua" name="consumoagua">
+          </div>
+            
+            <input type="submit" required id="huelladecarbono" onclick="calculadora();">
+        </form>
+      
+
+        </div>     
 
 
 
-    <div id="vinculacion">
-        <p>Conecta con otras empresas para compartir conocimientos, prácticas y soluciones para reducir la huella de carbono en conjunto.</p>
-        <button>Descarbonízate</button>
-    </div>
+    
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
@@ -114,6 +158,7 @@
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
 
 
 </body>
