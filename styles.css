@@ -17,16 +17,49 @@ body {
     
 }
 
-nav{
-    
+#hero--diseño{
+
+    background-image:linear-gradient(to right, #5f3fb8 , #6e24a0ee);
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: auto;
-    top:0;
-    left:0;
-    background-image:linear-gradient(to right, #c4c5cc , #bcbbc4);
-    text-align: center;
-    
-    
+
+}
+
+#hero--diseño h1{
+    color: #ffffff;
+}
+
+#hero--diseño p{
+    color: #e1ee25;
+    font-weight:300;
+}
+
+#boton--hero{
+    background-color: yellow;
+    color: #5425FB;
+}
+
+#nav--diseño{
+    background-color: rgb(250, 248, 248);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+#logosincarbono{
+display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  
+}
+
+#menu--diseño{
+    display: flex;
+    justify-content: right;
 }
 
 #plan--diseño {
@@ -202,4 +235,12 @@ section, div{
         text-align: left;
     }
 
+    #menu--diseño{
+        text-size-adjust: 80%;
+    }
+
+    
+
   }
+
+ 
