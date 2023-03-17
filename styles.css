@@ -90,18 +90,18 @@ section, div{
     
 }
 
-  li {
+  .nav-item {
     display: inline;
     text-align: center;
   }
 
 
 
-  li a:hover {
+  .nav-link:hover {
     color: #bf9000;
   }
 
-  li a {
+  .nav-link {
     color: #2b0892;
     
   }
