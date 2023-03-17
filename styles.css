@@ -98,11 +98,11 @@ section, div{
 
 
   .nav-link:hover {
-    color: #bf9000;
+    color: #bf9000 !important;
   }
 
   .nav-link {
-    color: #2b0892;
+    color: #2b0892 !important;
     
   }
 
