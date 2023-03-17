@@ -229,7 +229,7 @@ section, div{
         width: 90%;
     }
 
-    #hero--imagen, img {
+    #hero--imagen {
         display: none !important;
     }
 
