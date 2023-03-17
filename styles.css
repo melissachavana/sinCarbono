@@ -214,17 +214,19 @@ section, div{
 
 
   
-  @media screen and (max-width: 600px ){
+ 
 
-    .topnav a{
-
-        display: block;
-        width: 100%;
-
-    }
-    
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  
     .hero, main{
         background-color: #adbaec;
+        width: 90%;
     }
 
     .herocentral {
@@ -239,8 +241,18 @@ section, div{
         text-size-adjust: 80%;
     }
 
-    
+}
 
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
   }
-
+  .header {
+    font-size: 24px;
+  }
+  main {
+    width: 80%;
+  }
+}
  
