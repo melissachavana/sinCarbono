@@ -230,7 +230,7 @@ section, div{
     }
 
     #hero--imagen {
-        display: none;
+        display: none !important;
     }
 
     section{
