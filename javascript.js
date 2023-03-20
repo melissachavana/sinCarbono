@@ -24,3 +24,5 @@ function myFunction() {
 
 
     }
+
+    $('.carousel').carousel()

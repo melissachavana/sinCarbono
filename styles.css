@@ -26,6 +26,26 @@ body {
 
 }
 
+#carrusel{
+    background-image:linear-gradient(to right, #74a8bd , #30cfb5c5);
+    display: flex;
+
+
+}
+
+#carrusel img{
+    width: 200px;
+    height: auto;
+}
+
+
+#mensaje--diseño{
+    
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
 #hero--diseño h1{
     color: #ffffff;
 }
