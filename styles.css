@@ -265,6 +265,8 @@ section, div{
 
     #menu--diseño{
         text-size-adjust: 80%;
+        display: flex;
+        align-content: right;
     }
 
     
