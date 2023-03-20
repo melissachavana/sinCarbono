@@ -65,7 +65,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    
 
+}
+
+#button--nav{
+    display: block;
+   
 }
 
 #logosincarbono{
@@ -261,6 +267,8 @@ section, div{
         text-size-adjust: 80%;
     }
 
+    
+
 }
 
 /* Media query for larger screens */
@@ -274,5 +282,10 @@ section, div{
   main {
     width: 80%;
   }
+
+  .navbar-toggler{
+    display: none;
+
+}
 }
  
