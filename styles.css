@@ -110,19 +110,19 @@ section, div{
     
 }
 
-  li {
+  .nav-item {
     display: inline;
     text-align: center;
   }
 
 
 
-  li a:hover {
-    color: rgba(244, 248, 11, 0.89);
+  .nav-link:hover {
+    color: #bf9000 !important;
   }
 
-  li a {
-    color: #5425FB;
+  .nav-link {
+    color: #2b0892 !important;
     
   }
 
@@ -234,21 +234,23 @@ section, div{
 
 
   
-  @media screen and (max-width: 600px ){
+ 
 
-    .topnav a{
-
-        display: block;
-        width: 100%;
-
-    }
-    
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  
     .hero, main{
         background-color: #adbaec;
+        width: 90%;
     }
 
-    .herocentral {
-        display: none;
+    #hero--imagen {
+        display: none !important;
     }
 
     section{
@@ -259,8 +261,18 @@ section, div{
         text-size-adjust: 80%;
     }
 
-    
+}
 
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
   }
-
+  .header {
+    font-size: 24px;
+  }
+  main {
+    width: 80%;
+  }
+}
  
