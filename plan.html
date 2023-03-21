@@ -76,47 +76,29 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TZyv9jyxUlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-<div id="tabla--diseño">
-
-    
-    <table>
-        <tr>
-          <th>Plan</th>
-          <th>Características</th>
-          <th>Mensualidad</th>
-        </tr>
-        <tr>
-          <td>Básico</td>
-          <td>Alcance 1, 2 y parte de 3</td>
-          <td>$1000 MXN</td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>Alcance 1, 2 y 3</td>
-          <td>$2500</td>
-        </tr>
-        <tr>
-          <td>Corporativo</td>
-          <td>3 alcances y ruta de descarbonización</td>
-          <td>$5000</td>
-        </tr>
-        <tr>
-          <td>Proveedores</td>
-          <td>Diagnóstico y plan básico</td>
-          <td>$1000 por proveedor</td>
-      </tr>
-      </table>
-
-
-
-</div>
 
 
      
 
             
-    <div class="container">
-        <h2>Calcula tus emisiones</h2>
+      
+        <div>
+          <br>
+          <br>
+        </div>
+
+
+    <!--diseño de formulario de emisiones-->
+
+<div class="container-fluid text-left" id="calculadora">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      
+      <div class="container">
+        <h1 id="planes--titulo">Calcula tus emisiones</h1>
+
         <form >
           <div class="form-group">
             <label for="usr">Empresa:</label>
@@ -163,16 +145,67 @@
             <label for="usr">Agua (m3/año)</label>
             <input type="number" class="form-control" id="agua" name="consumoagua">
           </div>
-            
+            <br>
             <input type="submit" required id="huelladecarbono" onclick="calculadora();">
         </form>
       
 
-        </div>     
+        </div>   
 
 
+    </div>
+    <div class="col-sm-2 sidenav">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<h1 id="planes--titulo">Conoce nuestros planes</h1>
+
+<div id="tabla--diseño">
 
     
+  <table>
+      <tr>
+        <th>Plan</th>
+        <th>Características</th>
+        <th>Mensualidad</th>
+      </tr>
+      <tr>
+        <td>Básico</td>
+        <td>Alcance 1, 2 y parte de 3</td>
+        <td>$1000 MXN</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>Alcance 1, 2 y 3</td>
+        <td>$2500 MXN</td>
+      </tr>
+      <tr>
+        <td>Corporativo</td>
+        <td>3 alcances y ruta de descarbonización</td>
+        <td>$5000 MXN</td>
+      </tr>
+      <tr>
+        <td>Proveedores</td>
+        <td>Diagnóstico y plan básico</td>
+        <td>$1000 MXN por proveedor</td>
+    </tr>
+    </table>
+
+
+
+</div>
+
+<div>
+  <br>
+  <br>
+</div>
+
+
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">

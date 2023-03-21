@@ -218,6 +218,12 @@ section, div{
         height: 150px;
 
     }
+
+    #calculadora{
+      text-align: left;
+      background-color: white;
+      padding: 30px;
+    }
     
   .grid-container{
     display: grid;
@@ -261,7 +267,6 @@ section, div{
   
 #tabla--diseño{
 
-    margin: 5%;
 }
 
 
