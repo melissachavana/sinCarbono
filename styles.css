@@ -5,9 +5,9 @@
 
 
 
-body {
+body, #mensaje--diseño {
     font-family: 'Poppins', sans-serif;
-    background-image:linear-gradient(to right, #b1d7e6 , #585e6631);
+    background-image:linear-gradient(to right, #dbd1f3 , #c7bbf131);
     
   }
  
@@ -26,24 +26,34 @@ body {
 
 }
 
+#hero--soluciones{
+
+    background-image:linear-gradient(to right, #5f3fb8 , #6e24a0ee);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250;
+
+}
+
 #carrusel{
-    background-image:linear-gradient(to right, #74a8bd , #30cfb5c5);
     display: flex;
 
 
 }
 
 #carrusel img{
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    display: flex;
 }
 
 
 #mensaje--diseño{
     
-    margin: 0;
-    padding: 0;
-    background-color: white;
+    margin:0px;
+    padding: 15px;
 }
 
 #hero--diseño h1{
@@ -134,7 +144,7 @@ section, div{
 
   footer{
     
-    background-image:linear-gradient(to right, #c4c5cc , #bcbbc4);
+    background-image:linear-gradient(to right, #384080 , #9436e0);
     margin: 0;
     padding: 0;
     bottom:0;
@@ -143,8 +153,24 @@ section, div{
     
   }
 
+  .banner--sitio{
+    padding-top: 3
+    0px;
+    height: 100px;
+  }
+
+  #banner--soluciones{
+    height: auto;
+    color: white;
+  }
+
+  #botón--soluciones{
+    background-color: yellow;
+    color: #6714d4;
+  }
+
   footer p {
-    color: #5425FB;
+    color: #f7f6fa;
     text-align: center;
     
     
@@ -171,7 +197,7 @@ section, div{
     #conecta{
 
     border-radius: 25px;
-    background: #e5e8eb;
+    background-color: #e5e8eb;
     padding: 20px;
     height: 150px;
 
