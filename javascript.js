@@ -3,9 +3,9 @@ let contador = 0;
 
 button.addEventListener("click", function(e) {
 	// Increment the click count
-	contador++;
+	
 	calculadora();
-
+  contador++;
 	// If the click count is equal to 3, disable the button
 	if (contador === 3) {
 		button.disabled = true;
@@ -25,7 +25,7 @@ function calculadora() {
 }
 
 function HuellaCarbono() {
-	alert("valor contador " + contador);
+	
 
 	let consumo_electricidad = document.getElementById("kwh").value;
 	let consumo_gasnatural = document.getElementById("gas").value;
