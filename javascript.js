@@ -1,31 +1,44 @@
+let button = document.getElementById("calcular-btn");
 let contador = 0;
 
+button.addEventListener("click", function(e) {
+	// Increment the click count
+	contador++;
+	calculadora();
+
+	// If the click count is equal to 3, disable the button
+	if (contador === 3) {
+		button.disabled = true;
+	}
+  e.preventDefault();
+
+});
+
 function calculadora() {
-  if (contador < 3) {
-    HuellaCarbono();
-    contador++;
-  } else {
-    alert("Has utilizado tus 3 intentos del día");
-  }
+	// Only run the HuellaCarbono function if contador is less than 3
+	if (contador < 3) {
+		HuellaCarbono();
+	} else {
+		alert("Has utilizado tus 3 intentos del día");
+	}
+
 }
 
 function HuellaCarbono() {
-  alert("valor contador " + contador);
+	alert("valor contador " + contador);
 
-  let consumo_electricidad = document.getElementById("kwh").value;
-  let consumo_gasnatural = document.getElementById("gas").value;
-  let consumo_diesel = document.getElementById("diesel").value;
-  let consumo_agua = document.getElementById("agua").value;
+	let consumo_electricidad = document.getElementById("kwh").value;
+	let consumo_gasnatural = document.getElementById("gas").value;
+	let consumo_diesel = document.getElementById("diesel").value;
+	let consumo_agua = document.getElementById("agua").value;
 
-  let huelladecarbono =
-    consumo_agua * 0.2 +
-    consumo_diesel * 2.7 +
-    consumo_gasnatural * 1.8 +
-    consumo_electricidad * 0.42;
+	let huelladecarbono =
+		consumo_agua * 0.2 +
+		consumo_diesel * 2.7 +
+		consumo_gasnatural * 1.8 +
+		consumo_electricidad * 0.42;
 
-  alert("Tu huella de carbono es " + huelladecarbono);
+	alert("Tu huella de carbono es " + huelladecarbono);
 }
-
-  
 
     $('.carousel').carousel()
