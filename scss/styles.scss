@@ -1,0 +1,290 @@
+@import "colores";
+@import "fuente";
+
+$vista:mobile;
+
+
+$redes: (
+  linkedin: $color_1,
+  whatsapp: $color_2,
+  twitter: $color_3
+);
+
+@each $red, $color in $redes {
+  .bi.bi-#{$red} {
+    color: $color;
+  }
+}
+
+/* Media query for larger screens */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $font-family_1;
+	background-image: linear-gradient(to right, #dbd1f3 , #c7bbf131);
+}
+#mensaje--diseño {
+	font-family: $font-family_1;
+	background-image: linear-gradient(to right, #dbd1f3 , #c7bbf131);
+	margin: 0px;
+	padding: 15px;
+}
+main {
+	min-height: 100%;
+}
+#hero--diseño {
+	background-image: linear-gradient(to right, #5f3fb8 , #6e24a0ee);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	h1 {
+		color: $color_1;
+	}
+	p {
+		color: $color_2;
+		font-weight: 300;
+	}
+}
+#hero--soluciones {
+	background-image: linear-gradient(to right, #5f3fb8 , #6e24a0ee);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 250;
+}
+#carrusel {
+	display: flex;
+	img {
+		width: 300px;
+		height: 300px;
+		border-radius: 15%;
+		display: flex;
+	}
+}
+#boton--hero {
+	background-color: $background-color_1;
+	color: $color_3;
+}
+#nav--diseño {
+	background-color: $background-color_2;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#button--nav {
+	display: block;
+}
+#logosincarbono {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15px;
+}
+#menu--diseño {
+	display: flex;
+	justify-content: right;
+}
+#plan--diseño {
+	background-image: linear-gradient(to right, #868ca3 , #645be9);
+	margin: 0;
+	padding: 0;
+}
+#planes--titulo {
+	text-align: center;
+	padding: 5%;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+section {
+	display: block;
+}
+div {
+	display: block;
+}
+.nav-item {
+	display: inline;
+	text-align: center;
+}
+.nav-link {
+	&:hover {
+		color: $color_4 !important;
+	}
+	color: $color_5 !important;
+}
+footer {
+	background-image: linear-gradient(to right, #384080 , #9436e0);
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	p {
+		color: $color_8;
+		text-align: center;
+	}
+
+    #icons{
+        display: flex;
+        color: $color_8;
+		justify-content: center;
+        padding: 3px;
+    }
+}
+.banner--sitio {
+	padding-top: 3 0px;
+	height: 100px;
+}
+#banner--soluciones {
+	height: auto;
+	color: $color_6;
+}
+#botón--soluciones {
+	background-color: $background-color_1;
+	color: $color_7;
+}
+.proceso {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	height: 250px;
+	padding: 15px;
+}
+.paso {
+	width: 33%;
+	background-color: $background-color_3;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+#icons{
+    display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+#conecta {
+	border-radius: 25px;
+	background-color: $background-color_4;
+	padding: 20px;
+	height: 150px;
+}
+#implementa {
+	border-radius: 25px;
+	background: #31e4bd;
+	padding: 20px;
+	height: 150px;
+}
+#reduce {
+	border-radius: 25px;
+	background: #d9e444;
+	padding: 20px;
+	height: 150px;
+}
+#calculadora {
+	text-align: left;
+	background-color: $background-color_5;
+	padding: 30px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 3fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 15px;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+table {
+	border-collapse: collapse;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+th {
+	text-align: left;
+	padding: 8px;
+	background-color: $background-color_7;
+	color: $color_6;
+}
+td {
+	text-align: left;
+	padding: 8px;
+}
+tr {
+	&:nth-child(even) {
+		background-color: $background-color_6;
+	}
+}
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+body
+{
+    @if $vista==desktop{
+
+        @media only screen and (min-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+            .header {
+                font-size: 24px;
+            }
+            main {
+                width: 80%;
+            }
+            .navbar-toggler {
+                display: none;
+            }
+        }
+
+    }
+    @else if $vista==mobile{
+
+        @media only screen and (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+            }
+            .hero {
+                background-color: $background-color_8;
+                width: 90%;
+            }
+            main {
+                background-color: $background-color_8;
+                width: 90%;
+            }
+            #hero--imagen {
+                display: none !important;
+            }
+            section {
+                text-align: left;
+            }
+            #menu--diseño {
+                text-size-adjust: 80%;
+                display: flex;
+                align-content: right;
+            }
+        }
+
+       
+
+    }
+    @else{
+        h1{font-size: 1rem;}
+    }
+}
+
+

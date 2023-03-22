@@ -1,0 +1,286 @@
+@charset "UTF-8";
+.bi.bi-linkedin {
+  color: #ffffff;
+}
+
+.bi.bi-whatsapp {
+  color: #e1ee25;
+}
+
+.bi.bi-twitter {
+  color: #5425FB;
+}
+
+/* Media query for larger screens */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #dbd1f3, rgba(199, 187, 241, 0.1921568627));
+}
+
+#mensaje--diseño {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #dbd1f3, rgba(199, 187, 241, 0.1921568627));
+  margin: 0px;
+  padding: 15px;
+}
+
+main {
+  min-height: 100%;
+}
+
+#hero--diseño {
+  background-image: linear-gradient(to right, #5f3fb8, rgba(110, 36, 160, 0.9333333333));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#hero--diseño h1 {
+  color: #ffffff;
+}
+#hero--diseño p {
+  color: #e1ee25;
+  font-weight: 300;
+}
+
+#hero--soluciones {
+  background-image: linear-gradient(to right, #5f3fb8, rgba(110, 36, 160, 0.9333333333));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 250;
+}
+
+#carrusel {
+  display: flex;
+}
+#carrusel img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15%;
+  display: flex;
+}
+
+#boton--hero {
+  background-color: yellow;
+  color: #5425FB;
+}
+
+#nav--diseño {
+  background-color: rgb(250, 248, 248);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#button--nav {
+  display: block;
+}
+
+#logosincarbono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+#menu--diseño {
+  display: flex;
+  justify-content: right;
+}
+
+#plan--diseño {
+  background-image: linear-gradient(to right, #868ca3, #645be9);
+  margin: 0;
+  padding: 0;
+}
+
+#planes--titulo {
+  text-align: center;
+  padding: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+.nav-item {
+  display: inline;
+  text-align: center;
+}
+
+.nav-link {
+  color: #2b0892 !important;
+}
+.nav-link:hover {
+  color: #bf9000 !important;
+}
+
+footer {
+  background-image: linear-gradient(to right, #384080, #9436e0);
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer p {
+  color: #f7f6fa;
+  text-align: center;
+}
+footer #icons {
+  display: flex;
+  color: #f7f6fa;
+  justify-content: center;
+  padding: 3px;
+}
+
+.banner--sitio {
+  padding-top: 3 0px;
+  height: 100px;
+}
+
+#banner--soluciones {
+  height: auto;
+  color: white;
+}
+
+#botón--soluciones {
+  background-color: yellow;
+  color: #6714d4;
+}
+
+.proceso {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  height: 250px;
+  padding: 15px;
+}
+
+.paso {
+  width: 33%;
+  background-color: rgb(246, 248, 250);
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+#conecta {
+  border-radius: 25px;
+  background-color: #e5e8eb;
+  padding: 20px;
+  height: 150px;
+}
+
+#implementa {
+  border-radius: 25px;
+  background: #31e4bd;
+  padding: 20px;
+  height: 150px;
+}
+
+#reduce {
+  border-radius: 25px;
+  background: #d9e444;
+  padding: 20px;
+  height: 150px;
+}
+
+#calculadora {
+  text-align: left;
+  background-color: white;
+  padding: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  background-color: #6714d4;
+  color: white;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  body body {
+    font-size: 14px;
+  }
+  body .header {
+    font-size: 20px;
+  }
+  body .hero {
+    background-color: #adbaec;
+    width: 90%;
+  }
+  body main {
+    background-color: #adbaec;
+    width: 90%;
+  }
+  body #hero--imagen {
+    display: none !important;
+  }
+  body section {
+    text-align: left;
+  }
+  body #menu--diseño {
+    text-size-adjust: 80%;
+    display: flex;
+    align-content: right;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
