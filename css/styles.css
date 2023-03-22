@@ -65,9 +65,17 @@ main {
   display: flex;
 }
 
-#boton--hero {
+#boton--hero, #boton--conecta {
   background-color: yellow;
   color: #5425FB;
+}
+
+#boton--conecta {
+  background-color: #6714d4;
+  width: auto;
+  color: #ffffff;
+  font-size: small;
+  display: flex;
 }
 
 #nav--diseño {

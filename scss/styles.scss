@@ -67,6 +67,17 @@ main {
 	background-color: $background-color_1;
 	color: $color_3;
 }
+
+#boton--conecta{
+    @extend #boton--hero;
+    background-color: $background-color_7;
+    width: auto;
+    color: $color_1;
+    font-size: small;
+    display: flex;
+    
+}
+
 #nav--diseño {
 	background-color: $background-color_2;
 	margin: 0;
