@@ -68,6 +68,12 @@ main {
 #boton--hero, #boton--conecta {
   background-color: yellow;
   color: #5425FB;
+  transition: height 2s; 
+}
+
+#boton--conecta:hover{
+  height: 115%;
+  
 }
 
 #boton--conecta {
